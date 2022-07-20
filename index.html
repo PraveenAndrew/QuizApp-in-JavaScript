@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Quiz App || Praveen Andrew</title>
+       <link rel="stylesheet" href="design.css">
+</head>
+<body>
+         <div class="container" id="container">
+              
+               <div class="title">Computer Quiz</div>
+
+               <div class="question" id="question"></div>
+
+               <label for="op1" class="option" ><input type="radio" name="option" id="op1" value="1"> <span id="option1">  </span></label>
+               <label for="op2" class="option"><input type="radio" name="option" id="op2" value="2"> <span id="option2"> </span></label>
+               <label for="op3" class="option"><input type="radio" name="option" id="op3" value="3"> <span id="option3"> </span></label>
+               <label for="op4" class="option"><input type="radio" name="option" id="op4" value="4"> <span id="option4"> </span></label>
+
+               <button id="nextQuestion" class="next-btn" type="button" onclick="loadNextQuestion();">Next Question</button>
+               
+         </div>
+          
+         <div id="result" class="result container" style="display: none;">
+             <div id="score"></div>
+             <button type="button" onclick="restartGame();">Restart</button>
+         </div>
+
+         <!-- js file -->
+         <script type="text/javascript" src="questions.js"></script>
+         <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
